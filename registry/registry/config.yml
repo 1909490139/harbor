@@ -25,7 +25,7 @@ http:
 auth:
   token:
     issuer: harbor-token-issuer
-    realm: http://8001.gr64db17.iyl0r2oh.0196bd.grapps.cn/service/token
+    realm: http://${proxy_url}/service/token
     rootcertbundle: /etc/registry/root.crt
     service: harbor-registry
 validation:
