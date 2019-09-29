@@ -14,7 +14,7 @@ storage:
   delete:
     enabled: true
 redis:
-  addr: redis:6379
+  addr: 127.0.0.1:6379
   password: 
   db: 1
 http:
@@ -34,7 +34,7 @@ notifications:
   endpoints:
   - name: harbor
     disabled: false
-    url: http://core:8080/service/notifications
+    url: http://127.0.0.1:8080/service/notifications
     timeout: 3000ms
     threshold: 5
     backoff: 1s
